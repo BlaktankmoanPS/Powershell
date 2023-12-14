@@ -1,0 +1,1 @@
+﻿Get-ADUser -Filter 'Name -like "*"' -SearchBase 'OU=Employees, DC=PremPnut, DC=local' -Properties * | fOReACH-Object {Set-ADUser $_ -add @{proxyAddresses="SMTP:"+ $_.GivenName + '.' + $_.Surname +"@premiumpnut.com"}}
