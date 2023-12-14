@@ -1,8 +1,8 @@
 #Collect lockout accounts from ADS
 Import-Module ActiveDirectory
 
-[string]$userName = "ppreports@premiumpnut.com"
-[string]$userPassword = "PPr3port5"
+[string]$userName = "youremail@email.com"
+[string]$userPassword = "yourpassword"
     
 # Convert to SecureString
 [securestring]$secStringPassword = ConvertTo-SecureString $userPassword -AsPlainText -Force
