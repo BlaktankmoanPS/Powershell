@@ -1,6 +1,6 @@
 ﻿$domainName = "prempnut.local"
 $localAccount = "Employee"
-$newPassword = "P3@nut@dmin!!"
+$newPassword = "whatever password you use"
 
 $computers = Get-ADComputer -Filter * -SearchBase "OU=Surfaces,OU=Workstations,DC=PremPnut,DC=local" -Server $domainName |
              Select-Object -ExpandProperty Name
